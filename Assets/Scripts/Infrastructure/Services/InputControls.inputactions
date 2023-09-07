@@ -1,0 +1,157 @@
+{
+    "name": "InputControls",
+    "maps": [
+        {
+            "name": "Control",
+            "id": "8ff8ebed-4664-4ead-a8ce-2b6087fdf963",
+            "actions": [
+                {
+                    "name": "Axis",
+                    "type": "Value",
+                    "id": "908c4aa2-2e85-4ba3-9e24-e99db4596735",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Jump",
+                    "type": "Value",
+                    "id": "1a149087-45c4-4769-bb11-e9587131a972",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Touch",
+                    "type": "Value",
+                    "id": "8810f711-84f3-45a3-a85e-774213597f24",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Horizontal",
+                    "id": "8f50fae6-36d3-4307-960f-8aa961eb1297",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Axis",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "b34b5622-0696-46e6-bc5f-3ab29252f46c",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PC",
+                    "action": "Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "db2a8584-35f1-4bbd-9870-724253fbc985",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PC",
+                    "action": "Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "HorizontalTouch",
+                    "id": "9d237e1f-75f7-4903-abd8-f31403981d1a",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Axis",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "0fd092ae-9cf5-432e-b070-c9a2215dc1bc",
+                    "path": "<Touchscreen>/primaryTouch/delta/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Touch",
+                    "action": "Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "12900d44-1978-4037-83be-7bd38de131ff",
+                    "path": "<Touchscreen>/primaryTouch/delta/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Touch",
+                    "action": "Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "772062d2-89cc-405f-8947-5b0e6e46e4f0",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PC",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a633ea04-2723-428d-b5ed-9ed9e61ca180",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "Touch",
+                    "action": "Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "PC",
+            "bindingGroup": "PC",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Touch",
+            "bindingGroup": "Touch",
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
